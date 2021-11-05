@@ -1,2 +1,3 @@
 # morpion_project_c
-Who said that coding a tic-tac-toe is boring ?
+
+Here is the repository of our first semester C language project in the ESEO which is a Morpion (Tic-Tac-Toe Shakespeare language)
