@@ -8,7 +8,7 @@
  */
 
 // WARNING : ".c" file inclusion only allowed for unit tests !
-#include "board.c"
+#include "../etape1/board.c"
 #include "test_CheckEndOfGame.h"
 #include <stdio.h>
 
@@ -32,7 +32,7 @@ static const BoardDataTest DataTest[] =
 {
 {NONE, NONE, NONE},
 {NONE, CROSS, NONE},
-{NONE, NONE, NONE}}, 0, 0, false, DRAW},
+{NONE, NONE, NONE}}, 1, 1, false, DRAW},
 {
 {
 {NONE, NONE, NONE},
@@ -81,7 +81,7 @@ static const BoardDataTest DataTest[] =
 
 };
 
-void testCheckEndOfGame (void)
+void test_CheckEndOfGame (void)
 {
 	int successCount = 0;
 	int failCount = 0;

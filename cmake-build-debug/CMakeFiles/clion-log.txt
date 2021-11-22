@@ -1,0 +1,5 @@
+/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c
+CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+See also "/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/cmake-build-debug/CMakeFiles/CMakeOutput.log".
