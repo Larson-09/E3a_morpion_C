@@ -10,6 +10,7 @@
 #include <assert.h>
 #include <stdio.h>
 
+#define CONFIG_PLAYER_MANAGER_SCANF
 #if defined CONFIG_PLAYER_MANAGER_SCANF
 
 void PlayerManager_init (void)
@@ -22,7 +23,10 @@ void PlayerManager_free (void)
 
 void PlayerManager_oneTurn (void)
 {
-  // TODO: à compléter
+    PutPieceResult result;
+    do {
+        result = Board_putPiece(1, 1, CROSS);
+    } while (result == SQUARE_IS_NOT_EMPTY);
 }
 
 #endif // defined CONFIG_PLAYER_MANAGER_SCANF

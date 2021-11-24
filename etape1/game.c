@@ -23,3 +23,13 @@ void Game_loop (void)
 {
 	// TODO: à compléter
 }
+
+void Game_SquareChangeCallback(void)
+{
+    // TODO: à compléter
+}
+
+void Game_SquareEndOfGame(void)
+{
+    // TODO: à compléter
+}
