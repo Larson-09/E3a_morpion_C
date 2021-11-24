@@ -9,8 +9,6 @@
 #include "board_view.h"
 #include "board.h"
 
-
-
 void Game_init (void)
 {
   // TODO: initialiser tous les modules

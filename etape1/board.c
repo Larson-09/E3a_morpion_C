@@ -2,16 +2,24 @@
 #include "stdio.h"
 #include <assert.h>
 
-PieceType boardSquares[3][3];
+// Declare variables and callbacks
+#define GRID_SIZE GRID_SIZE ;
+PieceType boardSquares[GRID_SIZE][GRID_SIZE];
 
-static bool isGameFinished (const PieceType boardSquares[3][3], Coordinate lastChangeX, Coordinate lastChangeY, GameResult *gameResult)
+SquareChangeCallback boardOnSquareChange;
+EndOfGameCallback boardOnEndGame;
+
+GameResult boardGameResult;
+
+
+static bool isGameFinished (const PieceType boardSquares[GRID_SIZE][GRID_SIZE], Coordinate lastChangeX, Coordinate lastChangeY, GameResult *gameResult)
 {
     *gameResult = DRAW;
 
     // Test if the grid is empty
     bool is_grid_empty = true;
-    for(int i = 0 ; i < 3 ; i++){
-        for (int j = 0; j < 3 ; ++j) {
+    for(int i = 0 ; i < GRID_SIZE ; i++){
+        for (int j = 0; j < GRID_SIZE ; ++j) {
             if (boardSquares[i][j] != NONE)
                 is_grid_empty = false;
         }
@@ -21,8 +29,8 @@ static bool isGameFinished (const PieceType boardSquares[3][3], Coordinate lastC
     // Check if the grid is full
     bool is_grid_full = true;
 
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; ++j) {
+    for (int i = 0; i < GRID_SIZE; i++) {
+        for (int j = 0; j < GRID_SIZE; ++j) {
             if (boardSquares[i][j] == NONE) {
                 is_grid_full = false;
             }
@@ -86,22 +94,65 @@ static bool isGameFinished (const PieceType boardSquares[3][3], Coordinate lastC
 
 void Board_init (SquareChangeCallback onSquareChange, EndOfGameCallback onEndOfGame)
 {
-  // TODO: à compléter
+    // Initialize callback function variables
+    boardOnSquareChange = onSquareChange;
+    boardOnEndGame = onEndOfGame;
+
+    // Initialize the board (full of NONE)
+    for (int i = 0; i < GRID_SIZE ; ++i) {
+        for (int j = 0; j < GRID_SIZE ; ++j) {
+            boardSquares[i][j] = NONE;
+        }
+    }
+
 }
 
 void Board_free ()
 {
-  // TODO: à compléter
+    // Precondition
+    if (!boardSquares)
+        perror("The board square does not exist");
 }
 
 PutPieceResult Board_putPiece (Coordinate x, Coordinate y, PieceType kindOfPiece)
 {
-  // TODO: à compléter
+    // Precondition
+    if (x < 0 || x > 2 || y < 0 || y > 2)
+        perror("X and Y must be contained between 0 and 2");
+
+    if (kindOfPiece != CROSS && kindOfPiece != CIRCLE)
+        perror("kindOfPiece must be CROSS or CIRCLE");
+
+    GameResult *gameResult;
+    
+    // Check if the case is empty
+    if (Board_getSquareContent(x,y) == NONE)
+    {
+        // Place the piece
+        boardSquares[y][x] = kindOfPiece;
+        boardOnSquareChange(x,y, kindOfPiece);
+        
+        // Check if the game is finished
+        if (isGameFinished(boardSquares, x,y, ))
+        {
+            boardOnEndGame(*gameResult);
+        }
+
+        // Return the fact that the piece is in place
+        return PIECE_IN_PLACE;
+    }
+    else
+    {
+        // Return the fact that the place was not empty
+        return SQUARE_IS_NOT_EMPTY;
+    }
+
+    
 }
 
 PieceType Board_getSquareContent (Coordinate x, Coordinate y)
 {
-  // TODO: à compléter
+  return boardSquares[y][x];
 }
 
 
