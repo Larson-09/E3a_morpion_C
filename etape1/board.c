@@ -3,7 +3,7 @@
 #include <assert.h>
 
 // Declare variables and callbacks
-#define GRID_SIZE GRID_SIZE ;
+#define GRID_SIZE 3 ;
 PieceType boardSquares[GRID_SIZE][GRID_SIZE];
 
 SquareChangeCallback boardOnSquareChange;
