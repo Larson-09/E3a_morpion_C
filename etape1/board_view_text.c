@@ -25,7 +25,7 @@ void BoardView_free (void)
 
 void BoardView_displayAll (void)
 {
-    printf ("\n_______\n");
+    printf("\n_______\n");
 
     // For each square of the grid, draw a O or a X if there is one in the current grid
     for(int i = 0 ; i < GRID_SIZE ; i++)
