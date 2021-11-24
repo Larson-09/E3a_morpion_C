@@ -45,7 +45,6 @@ void BoardView_displayAll (void)
     }
 }
 
-}
 
 void BoardView_displaySquare (Coordinate x, Coordinate y, PieceType kindOfPiece)
 {
