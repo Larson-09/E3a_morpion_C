@@ -23,10 +23,20 @@ void PlayerManager_free (void)
 
 void PlayerManager_oneTurn (void)
 {
+    //
     PutPieceResult result;
-    do {
+    do
+    {
         result = Board_putPiece(1, 1, CROSS);
-    } while (result == SQUARE_IS_NOT_EMPTY);
+    }
+    while (result == SQUARE_IS_NOT_EMPTY);
+
+    // Call the SquareChangeCallback
+
+
+    // Check if the game is finished
+
+
 }
 
 #endif // defined CONFIG_PLAYER_MANAGER_SCANF

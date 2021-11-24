@@ -26,11 +26,7 @@ void PlayerManager_oneTurn (void)
 {
     /* TODO: à compléter */
 
-    PutPieceResult result;
-
-    do {
-        result = Board_putPiece(1, 1, CROSS);
-    } while (result == SQUARE_IS_NOT_EMPTY);
+    Board_putPiece(1, 1, CROSS);
 
 }
 
