@@ -10,11 +10,15 @@
 #include <assert.h>
 #include <stdio.h>
 
+SquareChangeCallback *onSquareChange;
+EndOfGameCallback  *onEndOfGame;
+
 #define CONFIG_PLAYER_MANAGER_SCANF
 #if defined CONFIG_PLAYER_MANAGER_SCANF
 
 void PlayerManager_init (void)
 {
+    Board_init(*onSquareChange, *onEndOfGame);
 }
 
 void PlayerManager_free (void)
@@ -23,18 +27,12 @@ void PlayerManager_free (void)
 
 void PlayerManager_oneTurn (void)
 {
-    //
     PutPieceResult result;
     do
     {
         result = Board_putPiece(1, 1, CROSS);
     }
     while (result == SQUARE_IS_NOT_EMPTY);
-
-    // Call the SquareChangeCallback
-
-
-    // Check if the game is finished
 
 
 }

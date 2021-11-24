@@ -6,8 +6,8 @@
 #define GRID_SIZE 3 ;
 PieceType boardSquares[GRID_SIZE][GRID_SIZE];
 
-SquareChangeCallback boardOnSquareChange;
-EndOfGameCallback boardOnEndGame;
+SquareChangeCallback board_OnSquareChange;
+EndOfGameCallback board_OnEndGame;
 
 GameResult boardGameResult;
 
@@ -95,8 +95,8 @@ static bool isGameFinished (const PieceType boardSquares[GRID_SIZE][GRID_SIZE], 
 void Board_init (SquareChangeCallback onSquareChange, EndOfGameCallback onEndOfGame)
 {
     // Initialize callback function variables
-    boardOnSquareChange = onSquareChange;
-    boardOnEndGame = onEndOfGame;
+    board_OnSquareChange = onSquareChange;
+    board_OnEndGame = onEndOfGame;
 
     // Initialize the board (full of NONE)
     for (int i = 0; i < GRID_SIZE ; ++i) {
@@ -130,12 +130,12 @@ PutPieceResult Board_putPiece (Coordinate x, Coordinate y, PieceType kindOfPiece
     {
         // Place the piece
         boardSquares[y][x] = kindOfPiece;
-        boardOnSquareChange(x,y, kindOfPiece);
+        board_OnSquareChange(x,y, kindOfPiece);
         
         // Check if the game is finished
-        if (isGameFinished(boardSquares, x,y, ))
+        if (isGameFinished(boardSquares, x,y, *gameResult))
         {
-            boardOnEndGame(*gameResult);
+            board_OnEndGame(*gameResult);
         }
 
         // Return the fact that the piece is in place
