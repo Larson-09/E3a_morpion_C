@@ -3,13 +3,13 @@
 #include <assert.h>
 
 // Declare variables and callbacks
-#define GRID_SIZE 3 ;
+#define GRID_SIZE 3
 PieceType boardSquares[GRID_SIZE][GRID_SIZE];
 
 SquareChangeCallback board_OnSquareChange;
 EndOfGameCallback board_OnEndGame;
 
-GameResult boardGameResult;
+GameResult Board_gameResult;
 
 
 static bool isGameFinished (const PieceType boardSquares[GRID_SIZE][GRID_SIZE], Coordinate lastChangeX, Coordinate lastChangeY, GameResult *gameResult)
@@ -123,8 +123,6 @@ PutPieceResult Board_putPiece (Coordinate x, Coordinate y, PieceType kindOfPiece
     if (kindOfPiece != CROSS && kindOfPiece != CIRCLE)
         perror("kindOfPiece must be CROSS or CIRCLE");
 
-    GameResult *gameResult;
-    
     // Check if the case is empty
     if (Board_getSquareContent(x,y) == NONE)
     {
@@ -133,9 +131,9 @@ PutPieceResult Board_putPiece (Coordinate x, Coordinate y, PieceType kindOfPiece
         board_OnSquareChange(x,y, kindOfPiece);
         
         // Check if the game is finished
-        if (isGameFinished(boardSquares, x,y, *gameResult))
+        if (isGameFinished(boardSquares, x,y, &Board_gameResult))
         {
-            board_OnEndGame(*gameResult);
+            board_OnEndGame(Board_gameResult);
         }
 
         // Return the fact that the piece is in place

@@ -59,20 +59,10 @@ void Game_free (void)
 void Game_loop (void)
 {
 	// TODO: à compléter
-    PieceType current_player = CROSS;
     do
     {
-        // Display who is the next player to play
-        BoardView_displayPlayersTurn(current_player);
-
         // Manage the turn of the current player
         PlayerManager_oneTurn();
-
-        // Switch to the other player
-        switch (current_player) {
-            case CROSS: current_player = CIRCLE; break;
-            case CIRCLE: current_player = CROSS; break;
-        }
     }
     while(!endOfGameMarker);
 }
