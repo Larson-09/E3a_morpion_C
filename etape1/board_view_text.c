@@ -48,7 +48,9 @@ void BoardView_displayAll (void)
 
 void BoardView_displaySquare (Coordinate x, Coordinate y, PieceType kindOfPiece)
 {
-	BoardView_displayAll();
+    // Display the updated board
+    BoardView_displayAll();
+
 }
 
 void BoardView_displayEndOfGame (GameResult result)

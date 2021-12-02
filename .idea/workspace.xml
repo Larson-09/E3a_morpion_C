@@ -11,11 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="05749a06-83b2-48c8-b06b-6a85c32b115e" name="Changes" comment="Test commit via clion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/board.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/board_view_text.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board_view_text.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etape1/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/game.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etape1/game.h" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/player_manager_mock.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/player_manager_mock.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape2/player_manager_scanf.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape2/player_manager_scanf.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +55,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -94,7 +92,8 @@
       <workItem from="1637749580408" duration="459000" />
       <workItem from="1637750054676" duration="1299000" />
       <workItem from="1637766041827" duration="13000" />
-      <workItem from="1637766059369" duration="4004000" />
+      <workItem from="1637766059369" duration="4143000" />
+      <workItem from="1638447484231" duration="3495000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit via clion">
       <created>1636155319501</created>

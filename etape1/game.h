@@ -27,9 +27,5 @@ extern void Game_free (void);
  */
 extern void Game_loop (void);
 
-extern void Game_SquareChangeCallback(Coordinate x, Coordinate y, PieceType newContent);
-
-extern void Game_EndOfGameCallback(GameResult result);
-
 
 #endif /* !defined GAME_H_ */
