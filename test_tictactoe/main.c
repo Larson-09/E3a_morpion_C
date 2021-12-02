@@ -5,6 +5,7 @@
  * @author jilias
  */
 
+// gcc main.c test_CheckEndOfGame.c test_CheckEndOfGame.h ../etape1/board.h -o main
 #include "test_CheckEndOfGame.h"
 
 int main (void)
