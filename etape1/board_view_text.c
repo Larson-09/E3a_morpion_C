@@ -85,7 +85,7 @@ void BoardView_displayPlayersTurn (PieceType thisPlayer)
 
 void BoardView_sayCannotPutPiece (void)
 {
-    printf("The piece can not be placed here because the square is not empty");
+    printf("The piece can not be placed here because the square is not empty. Please select another square.\n");
 }
 
 #endif // defined CONFIG_TEXTUI

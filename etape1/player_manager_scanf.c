@@ -30,23 +30,27 @@ void PlayerManager_free (void)
 
 void PlayerManager_oneTurn (void)
 {
+    // Display who is the next player to play
+    BoardView_displayPlayersTurn(current_player);
+
+    // Ask for coordinates to put a piece
     PutPieceResult result;
     do
     {
-        // Display who is the next player to play
-        BoardView_displayPlayersTurn(current_player);
-
         // Ask for a line and a column
         int col ;
         int line ;
 
         do {
-            printf("Choose a column and a line between  and 3 (X,Y)");
+            printf("Choose a column and a line between  and 3 (X,Y)\n");
             scanf("%d,%d", &col, &line);
         }
         while (line < 0 || line > 2 || col < 0 || col > 2);
 
+        // Check if the piece is correctly placed
         result = Board_putPiece(line, col,current_player);
+        if (result == SQUARE_IS_NOT_EMPTY)
+            BoardView_sayCannotPutPiece();
     }
     while (result == SQUARE_IS_NOT_EMPTY);
 
