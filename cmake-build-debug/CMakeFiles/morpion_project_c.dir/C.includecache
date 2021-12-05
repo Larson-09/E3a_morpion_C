@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/board.c
-board.h
-/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/board.h
-stdio.h
-/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/stdio.h
-assert.h
--
-
 /home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/board.h
 stdbool.h
 -
@@ -22,13 +14,19 @@ stdbool.h
 board.h
 /home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/board.h
 
-/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/player_manager_scanf.c
-board.h
-/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/board.h
+/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/game.c
+player_manager.h
+/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/player_manager.h
 board_view.h
 /home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/board_view.h
-assert.h
--
-stdio.h
--
+board.h
+/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/board.h
+
+/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/game.h
+
+/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/main.c
+game.h
+/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/game.h
+
+/home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/etape1/player_manager.h
 

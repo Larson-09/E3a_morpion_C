@@ -27,5 +27,4 @@ extern void Game_free (void);
  */
 extern void Game_loop (void);
 
-
 #endif /* !defined GAME_H_ */

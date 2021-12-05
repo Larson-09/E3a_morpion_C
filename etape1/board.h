@@ -27,9 +27,9 @@ typedef unsigned int Coordinate;
  */
 typedef enum
 {
-	NONE,   /**< used to tell there is no piece (a piece that has no kind is not a piece) */
-	CROSS,  /**< a cross ("X") piece */
-	CIRCLE  /**< a circle ("O") piece */
+    NONE,   /**< used to tell there is no piece (a piece that has no kind is not a piece) */
+    CROSS,  /**< a cross ("X") piece */
+    CIRCLE  /**< a circle ("O") piece */
 } PieceType;
 
 /**
@@ -37,8 +37,8 @@ typedef enum
  */
 typedef enum
 {
-	PIECE_IN_PLACE,       /**< no problem: the piece has been put in the specified square */
-	SQUARE_IS_NOT_EMPTY   /**< the specified square is not empty, then the piece has not been put */
+    PIECE_IN_PLACE,       /**< no problem: the piece has been put in the specified square */
+    SQUARE_IS_NOT_EMPTY   /**< the specified square is not empty, then the piece has not been put */
 } PutPieceResult;
 
 /**
@@ -46,9 +46,9 @@ typedef enum
  */
 typedef enum
 {
-	DRAW,        /**< draw game, not player wins */
-	CROSS_WINS,  /**< crosses player wins */
-	CIRCLE_WINS  /**< circles player wins */
+    DRAW,        /**< draw game, not player wins */
+    CROSS_WINS,  /**< crosses player wins */
+    CIRCLE_WINS  /**< circles player wins */
 } GameResult;
 
 /**
@@ -66,24 +66,6 @@ typedef void (*SquareChangeCallback) (Coordinate x, Coordinate y, PieceType newC
  * @param [in] result result of the game (who wins or not)
  */
 typedef void (*EndOfGameCallback) (GameResult result);
-
-/**
-     * Check if the game has to be ended. Only alignment from the last
-     * modified square are checked.
-     *
-     * @param [in] boardSquares the board to check
-     * @param [in] lastChangeX the colum where the last piece has been put
-     * @param [in] lastChangeY the row where the last piece has been put
-     * @param [out] gameResult the winning status if the game has ended (value is not set if
-     * the game is not finished)
-     *
-     * @pre lastChangeX must be in [0..2]
-     * @pre lastChangeY must be in [0..2]
-     * @pre gameResult must point on an allocated GameResult variable
-     *
-     * @return a boolean that tells if the game is finished
- */
-static bool isGameFinished (const PieceType boardSquares[3][3], Coordinate lastChangeX, Coordinate lastChangeY, GameResult *gameResult);
 
 /**
  * The board's constructor.
