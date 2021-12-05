@@ -60,5 +60,4 @@ void PlayerManager_oneTurn (void)
         case CIRCLE: current_player = CROSS; break;
     }
 }
-
 #endif // defined CONFIG_PLAYER_MANAGER_SCANF

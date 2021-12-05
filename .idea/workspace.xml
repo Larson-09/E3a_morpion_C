@@ -11,13 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="05749a06-83b2-48c8-b06b-6a85c32b115e" name="Changes" comment="Test commit via clion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/morpion_project_c.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/morpion_project_c.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/morpion_project_c.dir/etape1/board_view_text.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/morpion_project_c.dir/etape1/board_view_text.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/morpion_project_c.dir/etape1/player_manager_scanf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/morpion_project_c.dir/etape1/player_manager_scanf.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/morpion_project_c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/morpion_project_c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/board_view_text.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board_view_text.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/player_manager_scanf.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/player_manager_scanf.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
