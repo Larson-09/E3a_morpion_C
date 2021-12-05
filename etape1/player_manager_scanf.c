@@ -10,8 +10,6 @@
 #include <assert.h>
 #include <stdio.h>
 
-SquareChangeCallback *onSquareChange;
-EndOfGameCallback *onEndOfGame;
 PieceType current_player;
 
 
