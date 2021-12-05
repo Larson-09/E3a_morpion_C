@@ -10,10 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05749a06-83b2-48c8-b06b-6a85c32b115e" name="Changes" comment="Test commit via clion">
+      <change beforePath="$PROJECT_DIR$/.idea/morpion_project_c.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etape1/board_view_text.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board_view_text.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etape1/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/game.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/game.h" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/main" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/player_manager_mock.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/player_manager_mock.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/player_manager_scanf.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/player_manager_scanf.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +31,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -31,6 +40,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="20WKmOekZMltDfWDfFGArMwmtxv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,6 +55,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
@@ -47,15 +65,23 @@
     <property name="cmake.loaded.for.project" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/etape1" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="morpion_project_c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -93,7 +119,10 @@
       <workItem from="1637750054676" duration="1299000" />
       <workItem from="1637766041827" duration="13000" />
       <workItem from="1637766059369" duration="4143000" />
-      <workItem from="1638447484231" duration="3495000" />
+      <workItem from="1638447484231" duration="5518000" />
+      <workItem from="1638454382754" duration="7404000" />
+      <workItem from="1638461796423" duration="565000" />
+      <workItem from="1638708650232" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit via clion">
       <created>1636155319501</created>
@@ -133,6 +162,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Test commit via clion" />
     <option name="LAST_COMMIT_MESSAGE" value="Test commit via clion" />
   </component>

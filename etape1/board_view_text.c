@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 #define CONFIG_TEXTUI
-
 #define GRID_SIZE 3
-PieceType boardSquares[GRID_SIZE][GRID_SIZE];
+
+extern PieceType boardSquares[GRID_SIZE][GRID_SIZE];
 
 #if defined CONFIG_TEXTUI
 
@@ -43,6 +43,7 @@ void BoardView_displayAll (void)
         printf("|\n");
         printf("\n_______\n");
     }
+
 }
 
 

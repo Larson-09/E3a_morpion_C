@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 SquareChangeCallback *onSquareChange;
-EndOfGameCallback  *onEndOfGame;
+EndOfGameCallback *onEndOfGame;
 PieceType current_player;
 
 
@@ -21,9 +21,7 @@ PieceType current_player;
 
 void PlayerManager_init (void)
 {
-    Board_init(*onSquareChange, *onEndOfGame);
     current_player = CROSS;
-
 }
 
 void PlayerManager_free (void)

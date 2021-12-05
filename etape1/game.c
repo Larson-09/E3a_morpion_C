@@ -44,7 +44,7 @@ void Game_init (void)
   endOfGameMarker = false;
 
   // Initialize modules
-  Board_init(&Game_SquareChangeCallback, &Game_EndOfGameCallback);
+  Board_init(Game_SquareChangeCallback, Game_EndOfGameCallback);
   BoardView_init();
   PlayerManager_init();
 }
