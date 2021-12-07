@@ -15,7 +15,7 @@
 /**
  * Constructor of the board view.
  *
- * Must be called before any other function of this module.
+ * Must be called before any zzz function of this module.
  */
 extern void BoardView_init (void);
 

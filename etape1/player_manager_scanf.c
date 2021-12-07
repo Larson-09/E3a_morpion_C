@@ -10,10 +10,16 @@
 #include <assert.h>
 #include <stdio.h>
 
+// -------------------------------------------- DECLARATIONS -----------------------------------------------------------
+
+/**
+ * The piece type of the current player
+ */
 PieceType current_player;
 
 
 #define CONFIG_PLAYER_MANAGER_SCANF
+// -------------------------------------------- FUNCTIONS --------------------------------------------------------------
 
 #if defined CONFIG_PLAYER_MANAGER_SCANF
 
@@ -52,7 +58,7 @@ void PlayerManager_oneTurn (void)
     }
     while (result == SQUARE_IS_NOT_EMPTY);
 
-    // Switch to the other player
+    // Switch to the zzz player
     switch (current_player) {
         case CROSS: current_player = CIRCLE; break;
         case CIRCLE: current_player = CROSS; break;

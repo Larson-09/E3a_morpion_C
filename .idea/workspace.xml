@@ -9,13 +9,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a507333-b56e-47e3-88a4-2a9e25338b4a" name="Changes" comment="">
+    <list default="true" id="5a507333-b56e-47e3-88a4-2a9e25338b4a" name="Changes" comment="Test commit via clion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/morpion_project_c.dir/etape1/board_view_text.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/morpion_project_c.dir/etape1/board_view_text.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/morpion_project_c.dir/etape1/player_manager_scanf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/morpion_project_c.dir/etape1/player_manager_scanf.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/morpion_project_c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/morpion_project_c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/board.h" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/board.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/board_view.h" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board_view.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/board_view_text.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board_view_text.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/player_manager_mock.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/player_manager_mock.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/player_manager_scanf.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/player_manager_scanf.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="20WKmOekZMltDfWDfFGArMwmtxv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -57,12 +62,13 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/zzz" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/zzz" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -79,7 +85,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="05749a06-83b2-48c8-b06b-6a85c32b115e" name="Changes" comment="" />
+      <changelist id="5a507333-b56e-47e3-88a4-2a9e25338b4a" name="Changes" comment="" />
       <created>1636155064784</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -112,6 +118,8 @@
       <workItem from="1638454382754" duration="7404000" />
       <workItem from="1638461796423" duration="565000" />
       <workItem from="1638708650232" duration="3000" />
+      <workItem from="1638720195483" duration="1138000" />
+      <workItem from="1638898096130" duration="2058000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit via clion">
       <created>1636155319501</created>

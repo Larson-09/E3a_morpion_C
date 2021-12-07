@@ -2,18 +2,81 @@
 #include "stdio.h"
 #include <assert.h>
 
-// Declare variables and callbacks
+// -------------------------------------------- DECLARATIONS -----------------------------------------------------------
+
+/**
+ * The size of the grid
+ */
 #define GRID_SIZE 3
+
+/**
+ * The tic-tac-toe board
+ */
 PieceType boardSquares[GRID_SIZE][GRID_SIZE];
 
+
+/**
+ * Function callback to use when the value of a square changes
+ */
 SquareChangeCallback board_OnSquareChange;
+
+/**
+ * Function callback to use when the game is finished
+ */
 EndOfGameCallback board_OnEndGame;
 
+/**
+ * The result of the game
+ */
 GameResult Board_gameResult;
 
+// -------------------------------------------- PRECONDITIONS FUNCTIONS ------------------------------------------------
 
+/**
+ * Rise an error if x or y coordinates or not in [0..2]
+ *
+ * @param [in] x column coordinate to test
+ * @param [in] y row coordinate to test
+ *
+ */
+void prec_valid_coordinates(Coordinate x, Coordinate y)
+{
+    // Precondition
+    if (x < 0 || x > 2 || y < 0 || y > 2)
+        perror("X and Y must be contained between 0 and 2");
+}
+
+/**
+ * Rise an error if the kind of piece is not CROSS or CIRCLE
+ *
+ * @param [in] kindOfPiece the kind of piece to test
+ *
+ */
+void prec_valid_piecetype(PieceType kindOfPiece)
+{
+    if (kindOfPiece != CROSS && kindOfPiece != CIRCLE)
+        perror("kindOfPiece must be CROSS or CIRCLE");
+}
+
+// -------------------------------------------- MAIN FUNCTIONS ---------------------------------------------------------
+
+/**
+ * Check if the game is finished by checking column, lines and diagonal around the last coordinates played
+ *
+ * @param [in] boardSquares the board to test
+ * @param [in] x column coordinate of the last modified square
+ * @param [in] y row coordinate of the last modified square
+ * @param [in] gameResult result of the game
+ *
+ * @pre x must be in [0..2]
+ * @pre y must be in [0..2]
+ *
+ * @return a boolean that informs if the game is finished
+ */
 static bool isGameFinished (const PieceType boardSquares[GRID_SIZE][GRID_SIZE], Coordinate lastChangeX, Coordinate lastChangeY, GameResult *gameResult)
 {
+    // Preconditions
+    prec_valid_coordinates(lastChangeX, lastChangeY);
     *gameResult = DRAW;
 
     // Test if the grid is empty
@@ -116,12 +179,9 @@ void Board_free ()
 
 PutPieceResult Board_putPiece (Coordinate x, Coordinate y, PieceType kindOfPiece)
 {
-    // Precondition
-    if (x < 0 || x > 2 || y < 0 || y > 2)
-        perror("X and Y must be contained between 0 and 2");
-
-    if (kindOfPiece != CROSS && kindOfPiece != CIRCLE)
-        perror("kindOfPiece must be CROSS or CIRCLE");
+    // Preconditions
+    prec_valid_coordinates(x, y);
+    prec_valid_piecetype(kindOfPiece);
 
     // Check if the case is empty
     if (Board_getSquareContent(x,y) == NONE)
@@ -144,14 +204,15 @@ PutPieceResult Board_putPiece (Coordinate x, Coordinate y, PieceType kindOfPiece
         // Return the fact that the place was not empty
         return SQUARE_IS_NOT_EMPTY;
     }
-
-    
 }
 
 PieceType Board_getSquareContent (Coordinate x, Coordinate y)
 {
-  return boardSquares[y][x];
+    // Preconditions
+    prec_valid_coordinates(x, y);
+    return boardSquares[y][x];
 }
+
 
 
 

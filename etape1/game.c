@@ -9,7 +9,14 @@
 #include "board_view.h"
 #include "board.h"
 
+// -------------------------------------------- DECLARATIONS -----------------------------------------------------------
+
+/**
+ * The marker that tells if the game is finished
+ */
 bool endOfGameMarker;
+
+// -------------------------------------------- FUNCTIONS --------------------------------------------------------------
 
 /**
  * Display the view on square changes

@@ -2,11 +2,21 @@
 #include <assert.h>
 #include <stdio.h>
 
-#define CONFIG_TEXTUI
+// -------------------------------------------- DECLARATIONS -----------------------------------------------------------
+
+/**
+ * The size of the grid
+ */
 #define GRID_SIZE 3
 
+/**
+ * The tic-tac-toe board
+ */
 extern PieceType boardSquares[GRID_SIZE][GRID_SIZE];
 
+#define CONFIG_TEXTUI
+
+// -------------------------------------------- FUNCTIONS --------------------------------------------------------------
 #if defined CONFIG_TEXTUI
 
 void BoardView_init (void)
