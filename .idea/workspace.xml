@@ -10,14 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a507333-b56e-47e3-88a4-2a9e25338b4a" name="Changes" comment="Test commit via clion">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/board.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/board_view.h" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board_view.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/board_view_text.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board_view_text.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/game.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/player_manager_mock.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/player_manager_mock.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/player_manager_scanf.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/player_manager_scanf.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +20,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -62,7 +54,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/zzz" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
