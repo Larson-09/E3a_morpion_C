@@ -14,7 +14,6 @@
  */
 PieceType boardSquares[GRID_SIZE][GRID_SIZE];
 
-
 /**
  * Function callback to use when the value of a square changes
  */

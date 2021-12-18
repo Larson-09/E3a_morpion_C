@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/morpion_project_c.dir/etape1/board.c.o CMakeFiles/morpion_project_c.dir/etape1/board_view_text.c.o CMakeFiles/morpion_project_c.dir/etape1/game.c.o CMakeFiles/morpion_project_c.dir/etape1/main.c.o CMakeFiles/morpion_project_c.dir/etape1/player_manager_scanf.c.o CMakeFiles/morpion_project_c.dir/etape1/tictactoe_erros.c.o -o morpion_project_c 

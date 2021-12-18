@@ -1,0 +1,8 @@
+C_FILES :=$(wildcard ../test_tictactoe/*.c)
+H_FILES :=$(../etape1/board.h ../test_tictactoe/test_CheckEndOfGame.h)
+
+.SILENT:all
+
+all:
+	gcc $(C_FILES) $(H_FILES) -o test_end_of_game_exe
+	./test_end_of_game_exe

@@ -14,8 +14,6 @@
  */
 extern PieceType boardSquares[GRID_SIZE][GRID_SIZE];
 
-#define CONFIG_TEXTUI
-
 // -------------------------------------------- FUNCTIONS --------------------------------------------------------------
 #if defined CONFIG_TEXTUI
 
