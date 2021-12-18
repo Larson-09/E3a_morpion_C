@@ -5,12 +5,12 @@
  * @author jilias
  */
 
-#include "board_view.h"
+#include "../etape1//board_view.h"
 #include <assert.h>
 #include <stdio.h>
 #include <SDL.h>
 #include <SDL_image.h>
-#include "tictactoe_errors.h"
+#include "../etape1/tictactoe_errors.h"
 
 #if defined CONFIG_SDLUI
 
@@ -92,6 +92,16 @@ void BoardView_displayAll (void)
 	/* utiliser "renderImage" pour afficher l'image de fond "BackgroundImage",
 	 * puis afficher l'ensemble des cases à l'aide de la fonction BoardView_displaySquare
 	 */
+    PieceType piece_to_display = NONE;
+	renderImage(BackgroundImage, 0, 0);
+
+	for (int i = 0; i < 4; ++i) {
+		for (int j = 0; j < 4; ++j) {
+			piece_to_display = Board_getSquareContent(i, j);
+			BoardView_displaySquare(j, i, piece_to_display);
+			SDL_Delay(10);
+		}
+	}
 }
 
 void BoardView_displaySquare (Coordinate x, Coordinate y, PieceType kindOfPiece)
@@ -100,21 +110,42 @@ void BoardView_displaySquare (Coordinate x, Coordinate y, PieceType kindOfPiece)
 	 * l'endroit correspondant aux coordonnées logiques "x" et "y".
 	 */
 
+    int displayed_x = x * 158;//display to the right coordinate
+	int displayed_y = y * 158;//display to the right coordinate
+
+    switch (kindOfPiece) {
+        case CROSS : renderImage(SpriteX, displayed_y, displayed_x); break ;
+        case CIRCLE : renderImage(SpriteO, displayed_y, displayed_x); break ;
+    }
 }
 
 void BoardView_displayEndOfGame (GameResult result)
 {
+    switch (result) {
+        case CROSS_WINS: renderImage(Sprite_O_Wins, 0, 0); break;
+        case CIRCLE_WINS: renderImage(Sprite_X_Wins, 0, 0); break;
+        case DRAW: renderImage(Sprite_Draw, 0, 0); break;
+    }
+
 	SDL_Delay (2000); // TODO: vous pouvez améliorer ceci (lorsque le reste fonctionnera)
 }
 
 void BoardView_displayPlayersTurn (PieceType thisPlayer)
 {
 	// TODO: vous pouvez améliorer ceci (lorsque le reste fonctionnera)
+    switch (thisPlayer) {
+        case CROSS: renderImage(SpriteXturn, 0, 0); break;
+        case CIRCLE: renderImage(SpriteOturn, 0, 0); break;
+    }
+
+	SDL_Delay(2000);
 }
 
 void BoardView_sayCannotPutPiece (void)
 {
 	// TODO: vous pouvez améliorer ceci (lorsque le reste fonctionnera)
+    renderImage(SpriteNo, 0, 0);
+	SDL_Delay(2000);
 }
 
 #endif // defined CONFIG_SDLUI

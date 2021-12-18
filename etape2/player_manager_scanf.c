@@ -15,17 +15,15 @@
 /**
  * The piece type of the current player
  */
-PieceType current_player;
+PieceType currentPlayer;
 
-
-#define CONFIG_PLAYER_MANAGER_SCANF
 // -------------------------------------------- FUNCTIONS --------------------------------------------------------------
 
 #if defined CONFIG_PLAYER_MANAGER_SCANF
 
 void PlayerManager_init (void)
 {
-    current_player = CROSS;
+    currentPlayer = CROSS;
 }
 
 void PlayerManager_free (void)
@@ -35,7 +33,7 @@ void PlayerManager_free (void)
 void PlayerManager_oneTurn (void)
 {
     // Display who is the next player to play
-    BoardView_displayPlayersTurn(current_player);
+    BoardView_displayPlayersTurn(currentPlayer);
 
     // Ask for coordinates to put a piece
     PutPieceResult result;
@@ -52,16 +50,16 @@ void PlayerManager_oneTurn (void)
         while (line < 0 || line > 2 || col < 0 || col > 2);
 
         // Check if the piece is correctly placed
-        result = Board_putPiece(line, col,current_player);
+        result = Board_putPiece(line, col,currentPlayer);
         if (result == SQUARE_IS_NOT_EMPTY)
             BoardView_sayCannotPutPiece();
     }
     while (result == SQUARE_IS_NOT_EMPTY);
 
     // Switch to the zzz player
-    switch (current_player) {
-        case CROSS: current_player = CIRCLE; break;
-        case CIRCLE: current_player = CROSS; break;
+    switch (currentPlayer) {
+        case CROSS: currentPlayer = CIRCLE; break;
+        case CIRCLE: currentPlayer = CROSS; break;
     }
 }
 #endif // defined CONFIG_PLAYER_MANAGER_SCANF
