@@ -1,4 +1,1 @@
-/snap/clion/169/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c
--- Configuring done
--- Generating done
--- Build files have been written to: /home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c/cmake-build-debug
+CMakeLists.txt not found in /home/jordan/Coding_Projects/Morpion_Project_C_Repo/morpion_project_c Select CMakeLists.txt

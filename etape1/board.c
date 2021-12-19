@@ -14,16 +14,15 @@
  */
 PieceType boardSquares[GRID_SIZE][GRID_SIZE];
 
-
 /**
  * Function callback to use when the value of a square changes
  */
-SquareChangeCallback board_OnSquareChange;
+SquareChangeCallback Board_onSquareChange;
 
 /**
  * Function callback to use when the game is finished
  */
-EndOfGameCallback board_OnEndGame;
+EndOfGameCallback Board_onEndGame;
 
 /**
  * The result of the game
@@ -73,21 +72,21 @@ void prec_valid_piecetype(PieceType kindOfPiece)
  *
  * @return a boolean that informs if the game is finished
  */
-static bool isGameFinished (const PieceType boardSquares[GRID_SIZE][GRID_SIZE], Coordinate lastChangeX, Coordinate lastChangeY, GameResult *gameResult)
+static bool Board_isGameFinished (const PieceType boardSquares[GRID_SIZE][GRID_SIZE], Coordinate lastChangeX, Coordinate lastChangeY, GameResult *gameResult)
 {
     // Preconditions
     prec_valid_coordinates(lastChangeX, lastChangeY);
     *gameResult = DRAW;
 
     // Test if the grid is empty
-    bool is_grid_empty = true;
+    bool isGridEmpty = true;
     for(int i = 0 ; i < GRID_SIZE ; i++){
         for (int j = 0; j < GRID_SIZE ; ++j) {
             if (boardSquares[i][j] != NONE)
-                is_grid_empty = false;
+                isGridEmpty = false;
         }
     }
-    if(is_grid_empty) return false;
+    if(isGridEmpty) return false;
 
     // Check if the grid is full
     bool is_grid_full = true;
@@ -158,8 +157,8 @@ static bool isGameFinished (const PieceType boardSquares[GRID_SIZE][GRID_SIZE], 
 void Board_init (SquareChangeCallback onSquareChange, EndOfGameCallback onEndOfGame)
 {
     // Initialize callback function variables
-    board_OnSquareChange = onSquareChange;
-    board_OnEndGame = onEndOfGame;
+    Board_onSquareChange = onSquareChange;
+    Board_onEndGame = onEndOfGame;
 
     // Initialize the board (full of NONE)
     for (int i = 0; i < GRID_SIZE ; ++i) {
@@ -172,9 +171,6 @@ void Board_init (SquareChangeCallback onSquareChange, EndOfGameCallback onEndOfG
 
 void Board_free ()
 {
-    // Precondition
-    if (!boardSquares)
-        perror("The board square does not exist");
 }
 
 PutPieceResult Board_putPiece (Coordinate x, Coordinate y, PieceType kindOfPiece)
@@ -188,12 +184,12 @@ PutPieceResult Board_putPiece (Coordinate x, Coordinate y, PieceType kindOfPiece
     {
         // Place the piece
         boardSquares[y][x] = kindOfPiece;
-        board_OnSquareChange(x,y, kindOfPiece);
-        
+        Board_onSquareChange(x,y, kindOfPiece);
+
         // Check if the game is finished
-        if (isGameFinished(boardSquares, x,y, &Board_gameResult))
+        if (Board_isGameFinished(boardSquares, x,y, &Board_gameResult))
         {
-            board_OnEndGame(Board_gameResult);
+            Board_onEndGame(Board_gameResult);
         }
 
         // Return the fact that the piece is in place

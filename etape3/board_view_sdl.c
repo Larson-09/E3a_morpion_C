@@ -2,23 +2,32 @@
  * @file board_view_text.c
  *
  * @date 7 oct. 2016
- * @author jilias
+ * @author Bury Laude
  */
 
-#include "board_view.h"
+#include "../etape1/board_view.h"
 #include <assert.h>
 #include <stdio.h>
 #include <SDL.h>
 #include <SDL_image.h>
-#include "tictactoe_errors.h"
+#include "../etape1/tictactoe_errors.h"
 
 #if defined CONFIG_SDLUI
 
 static SDL_Window *MainWindow;
+
 static SDL_Renderer *MainRenderer;
+
 static SDL_Surface *BackgroundImage;
 static SDL_Surface *SpriteO;
 static SDL_Surface *SpriteX;
+static SDL_Surface *SpriteCrossWins;
+static SDL_Surface *SpriteCircleWins;
+static SDL_Surface *SpriteDraw;
+static SDL_Surface *SpriteCrossTurn;
+static SDL_Surface *SpriteCircleTurn;
+static SDL_Surface *SpriteCannotPutPiece;
+
 
 static void renderImage (SDL_Surface *image, int x, int y)
 {
@@ -51,13 +60,39 @@ void BoardView_init (void)
 		}
 
 		// Loads images
-		BackgroundImage = IMG_Load ("background.png");
+		BackgroundImage = IMG_Load ("../etape3/images/sprite_background.png");
 		if (BackgroundImage == NULL)
 					fatalError(IMG_GetError ());
-		SpriteO = IMG_Load ("sprite_O.png");
+
+		SpriteO = IMG_Load ("../etape3/images/sprite_O.png");
 		if (SpriteO == NULL)
 					fatalError(IMG_GetError ());
-		SpriteX = IMG_Load ("sprite_X.png");
+
+		SpriteX = IMG_Load ("../etape3/images/sprite_X.png");
+		if (SpriteX == NULL)
+			fatalError(IMG_GetError ());
+
+        SpriteCrossWins= IMG_Load ("../etape3/images/sprite_crossWins.png");
+		if (SpriteX == NULL)
+			fatalError(IMG_GetError ());
+
+        SpriteCircleWins= IMG_Load ("../etape3/images/sprite_circleWins.png");
+		if (SpriteX == NULL)
+			fatalError(IMG_GetError ());
+
+        SpriteDraw= IMG_Load ("../etape3/images/sprite_draw.png");
+		if (SpriteX == NULL)
+			fatalError(IMG_GetError ());
+
+        SpriteCrossTurn = IMG_Load ("../etape3/images/sprite_crossTurn.png");
+		if (SpriteX == NULL)
+			fatalError(IMG_GetError ());
+
+        SpriteCircleTurn = IMG_Load ("../etape3/images/sprite_circleTurn.png");
+		if (SpriteX == NULL)
+			fatalError(IMG_GetError ());
+
+        SpriteCannotPutPiece = IMG_Load ("../etape3/images/sprite_cannotPutPiece.png");
 		if (SpriteX == NULL)
 			fatalError(IMG_GetError ());
 
@@ -92,6 +127,16 @@ void BoardView_displayAll (void)
 	/* utiliser "renderImage" pour afficher l'image de fond "BackgroundImage",
 	 * puis afficher l'ensemble des cases à l'aide de la fonction BoardView_displaySquare
 	 */
+    PieceType pieceToDisplay = NONE;
+	renderImage(BackgroundImage, 0, 0);
+
+	for (int i = 0; i < 4; ++i) {
+		for (int j = 0; j < 4; ++j) {
+			pieceToDisplay = Board_getSquareContent(i, j);
+			BoardView_displaySquare(j, i, pieceToDisplay);
+			SDL_Delay(10);
+		}
+	}
 }
 
 void BoardView_displaySquare (Coordinate x, Coordinate y, PieceType kindOfPiece)
@@ -100,21 +145,68 @@ void BoardView_displaySquare (Coordinate x, Coordinate y, PieceType kindOfPiece)
 	 * l'endroit correspondant aux coordonnées logiques "x" et "y".
 	 */
 
+    // Precondition
+    if (x < 0 || x > 2 || y < 0 || y > 2)
+        perror("X and Y must be contained between 0 and 2");
+
+    if (kindOfPiece != CROSS && kindOfPiece != CIRCLE)
+        perror("kindOfPiece must be CROSS or CIRCLE");
+
+    // Adapt coordinates
+    int displayX, displayY;
+    int coord0 = 35;
+    int coord1 = 195;
+    int coord2 = 355;
+
+    switch(x){
+        case 0 : displayX = coord0 ; break ;
+        case 1 : displayX = coord1 ; break ;
+        case 2 : displayX = coord2 ; break ;
+    }
+
+    switch(y){
+        case 0 : displayY = coord0 ; break ;
+        case 1 : displayY = coord1 ; break ;
+        case 2 : displayY = coord2 ; break ;
+    }
+
+    switch (kindOfPiece) {
+        case CROSS : renderImage(SpriteX, displayY, displayX); break ;
+        case CIRCLE : renderImage(SpriteO, displayY, displayX); break ;
+    }
 }
 
 void BoardView_displayEndOfGame (GameResult result)
 {
-	SDL_Delay (2000); // TODO: vous pouvez améliorer ceci (lorsque le reste fonctionnera)
+    // Precondition
+    if (result != CROSS_WINS && result != CIRCLE_WINS)
+        perror("kindOfPiece must be CROSS or CIRCLE");
+
+    // Display Result
+    switch (result) {
+        case CROSS_WINS: renderImage(SpriteCrossWins, 0, 0); break;
+        case CIRCLE_WINS: renderImage(SpriteCircleWins, 0, 0); break;
+        case DRAW: renderImage(SpriteDraw, 0, 0); break;
+    }
+
+    SDL_Delay(5000);
+
 }
 
 void BoardView_displayPlayersTurn (PieceType thisPlayer)
 {
-	// TODO: vous pouvez améliorer ceci (lorsque le reste fonctionnera)
+    switch (thisPlayer) {
+        case CROSS: renderImage(SpriteCrossTurn, 0, 0); break;
+        case CIRCLE: renderImage(SpriteCircleTurn, 0, 0); break;
+    }
+
+	SDL_Delay(2000);
 }
 
 void BoardView_sayCannotPutPiece (void)
 {
-	// TODO: vous pouvez améliorer ceci (lorsque le reste fonctionnera)
+    renderImage(SpriteCannotPutPiece, 0, 0);
+	SDL_Delay(2000);
 }
 
 #endif // defined CONFIG_SDLUI

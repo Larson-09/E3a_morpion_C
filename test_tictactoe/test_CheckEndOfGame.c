@@ -91,7 +91,7 @@ void test_CheckEndOfGame (void)
 
 	for (int i = 0; i < (sizeof(DataTest) / sizeof(BoardDataTest)); i++)
 	{
-		end = isGameFinished (DataTest[i].board, DataTest[i].lastPutX, DataTest[i].lastPutY, &gameResult);
+		end = Board_isGameFinished(DataTest[i].board, DataTest[i].lastPutX, DataTest[i].lastPutY, &gameResult);
 		if (end != DataTest[i].expectedEndOfGameResult)
 		{
 			printf ("test #%d failed, expected end of game was %s\n", i,
