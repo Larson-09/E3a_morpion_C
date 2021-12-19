@@ -57,7 +57,7 @@ void PlayerManager_oneTurn (void)
 
     Board_putPiece(testSetCol[i], testSetRow[i], currentPlayer);
 
-    // Switch to the zzz player
+    // Switch to the next player
     switch (currentPlayer) {
         case CROSS: currentPlayer = CIRCLE; break;
         case CIRCLE: currentPlayer = CROSS; break;

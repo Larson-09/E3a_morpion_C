@@ -10,23 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a507333-b56e-47e3-88a4-2a9e25338b4a" name="Changes" comment="Test commit via clion">
-      <change afterPath="$PROJECT_DIR$/etape3_bis/Circle_turn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etape3_bis/Cross_turn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etape3_bis/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etape3_bis/board_view_sdl.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etape3_bis/draw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etape3_bis/no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etape3_bis/player_manager_sdl.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etape3_bis/sprite_O.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etape3_bis/sprite_X.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etape3_bis/win.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/board.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/etape3_sdl_exe" beforeDir="false" afterPath="$PROJECT_DIR$/Makefiles/etape3_sdl_exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/board_view_text.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board_view_text.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etape1/player_manager_mock.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/player_manager_mock.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etape2/player_manager_scanf.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape2/player_manager_scanf.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etape3/board_view_sdl.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/board_view_sdl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_O.png" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/images/sprite_O.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_X.png" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/images/sprite_X.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_circleWins.png" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/images/sprite_circleWins.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_crossWins.png" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/images/sprite_crossWins.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_draw.png" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/images/sprite_draw.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etape3/player_manager_sdl.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/player_manager_sdl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_tictactoe/test_CheckEndOfGame.c" beforeDir="false" afterPath="$PROJECT_DIR$/test_tictactoe/test_CheckEndOfGame.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,25 +67,28 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/etape3/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/etape3/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/zzz" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/etape3/images" />
+      <recent name="$PROJECT_DIR$/etape3" />
       <recent name="$PROJECT_DIR$/etape2" />
       <recent name="$PROJECT_DIR$/etape1" />
       <recent name="$PROJECT_DIR$/etape1/Doxygen" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -138,7 +138,14 @@
       <workItem from="1639816790633" duration="6201000" />
       <workItem from="1639831209261" duration="1494000" />
       <workItem from="1639832716998" duration="3232000" />
-      <workItem from="1639836015503" duration="1000" />
+      <workItem from="1639836015503" duration="89000" />
+      <workItem from="1639908675872" duration="2450000" />
+      <workItem from="1639911131682" duration="458000" />
+      <workItem from="1639911593216" duration="230000" />
+      <workItem from="1639912126156" duration="87000" />
+      <workItem from="1639924390116" duration="4380000" />
+      <workItem from="1639928789172" duration="343000" />
+      <workItem from="1639929873328" duration="6558000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit via clion">
       <created>1636155319501</created>

@@ -2,7 +2,7 @@
  * @file player_manager_scanf.c
  *
  * @date 7 oct. 2016
- * @author jilias
+ * @author Bury Laude
  */
 
 #include "../etape1/board.h"
@@ -13,13 +13,20 @@
 
 #if defined CONFIG_PLAYER_MANAGER_SDL
 
-PieceType current_player;
+/**
+ * The piece type of the current player
+ */
+PieceType currentPlayer;
+
+/**
+ * The marker that tells if the game is finished
+ */
 extern bool endOfGameMarker;
 
 
 void PlayerManager_init (void)
 {
-    current_player = CROSS;
+    currentPlayer = CROSS;
 	assert (SDL_WasInit (SDL_INIT_VIDEO) != 0);
 }
 
@@ -30,29 +37,31 @@ void PlayerManager_free (void)
 static bool tryMove (int x, int y)
 {
 
-  // TODO: à compléter
-  if (x >= 0 && x < 3 && y >= 0 && y < 3) {// Check if coordinate are valid
-		//if the square is empty
-		if (Board_putPiece(x, y, thisPlayer) == PIECE_IN_PLACE) {
-			return true;
-		}
+    // Check the coordinates validity
+    if (x >= 0 && x < 3 && y >= 0 && y < 3) {
+        // If the square is available, put the piece
+        if (Board_putPiece(x, y, currentPlayer) == PIECE_IN_PLACE) {
+            return true;
+        }
+        // Else, display the error message
         else {
-			BoardView_sayCannotPutPiece();//else display msg
-			return false;
-		}
-	}
-}
+            BoardView_sayCannotPutPiece();
+            return false;
+        }
+    }
+    }
 
 void PlayerManager_oneTurn (void)
 {
 	int error;
 	SDL_Event event;
 	bool validMove;
-    
-    int mouse_x, mouse_y;
+
+    // Mouse coordinates
+    int mouseX, mouseY;
     
     // Display who is about to play
-    BoardView_display_PlayersTurn(current_player);
+    BoardView_displayPlayersTurn(currentPlayer);
     BoardView_displayAll();
 
 	do
@@ -82,14 +91,14 @@ void PlayerManager_oneTurn (void)
             case SDL_MOUSEBUTTONDOWN:
                 
                 // Get the mouse click position
-				SDL_GetMouseState(&xMouse, &yMouse);
+				SDL_GetMouseState(&mouseX, &mouseY);
                 
                 // Transform coordinates
-				xMouse = xMouse / 158;
-				yMouse = yMouse / 158;
+				mouseX = mouseX / 158;
+				mouseY = mouseY / 158;
                 
                 // Check if the move is valid or not
-				validMove = tryMove(xMouse, yMouse);
+				validMove = tryMove(mouseX, mouseY);
                 
                 // Display the board
 				BoardView_displayAll();
@@ -97,6 +106,12 @@ void PlayerManager_oneTurn (void)
 		}
 	}
 	while (!validMove);
+
+    // Switch to the next player
+	switch (currentPlayer) {
+        case CROSS : currentPlayer = CIRCLE; break;
+        case CIRCLE : currentPlayer = CROSS; break;
+	}
 }
 
 #endif // defined CONFIG_PLAYER_MANAGER_SCANF

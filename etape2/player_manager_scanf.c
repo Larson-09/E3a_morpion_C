@@ -44,7 +44,7 @@ void PlayerManager_oneTurn (void)
         int line ;
 
         do {
-            printf("Choose a column and a line between  and 3 (X,Y)\n");
+            printf("Choose a column and a line between 0 and 2 (X,Y)\n");
             scanf("%d,%d", &col, &line);
         }
         while (line < 0 || line > 2 || col < 0 || col > 2);
@@ -56,7 +56,7 @@ void PlayerManager_oneTurn (void)
     }
     while (result == SQUARE_IS_NOT_EMPTY);
 
-    // Switch to the zzz player
+    // Switch to the next player
     switch (currentPlayer) {
         case CROSS: currentPlayer = CIRCLE; break;
         case CIRCLE: currentPlayer = CROSS; break;

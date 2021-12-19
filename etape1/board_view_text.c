@@ -65,7 +65,7 @@ void BoardView_displaySquare (Coordinate x, Coordinate y, PieceType kindOfPiece)
 void BoardView_displayEndOfGame (GameResult result)
 {
     // Precondition
-    if (result != CROSS && result != CIRCLE)
+    if (result != CROSS_WINS && result != CIRCLE_WINS)
         perror("kindOfPiece must be CROSS or CIRCLE");
 
     // Display the result
