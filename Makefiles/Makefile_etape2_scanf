@@ -1,9 +1,0 @@
-C_FILES :=$(wildcard ../etape1/*.c ../etape2/*.c)
-H_FILES :=$(wildcard ../etape1/*.h)
-LDFLAGS:= -DCONFIG_PLAYER_MANAGER_SCANF=1 -DCONFIG_TEXTUI=1
-
-.SILENT: all
-
-all:
-	gcc $(C_FILES) $(H_FILES) $(LDFLAGS) -o etape2_scanf_exe
-	./etape2_scanf_exe
