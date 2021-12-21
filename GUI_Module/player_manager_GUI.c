@@ -6,7 +6,7 @@
  */
 
 #include "board.h"
-#include "board_view.h"
+#include "board_view_GUI.h"
 #include <assert.h>
 #include <SDL.h>
 #include <stdbool.h>

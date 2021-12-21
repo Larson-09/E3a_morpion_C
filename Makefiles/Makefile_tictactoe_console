@@ -1,0 +1,9 @@
+C_FILES :=$(wildcard ../src/*.c ../Console_Module/*.c)
+H_FILES :=$(wildcard ../src/*.h ../Console_Module/*.h)
+LDFLAGS:= -DCONFIG_PLAYER_MANAGER_SCANF=1 -DCONFIG_TEXTUI=1
+
+.SILENT: all
+
+all:
+	gcc $(C_FILES) $(H_FILES) $(LDFLAGS) -o tictactoe_console_exe
+	./tictactoe_console_exe
