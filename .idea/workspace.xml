@@ -10,20 +10,157 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a507333-b56e-47e3-88a4-2a9e25338b4a" name="Changes" comment="Test commit via clion">
+      <change afterPath="$PROJECT_DIR$/Makefiles/Makefile_tictactoe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefiles/etape3_sdl_exe" beforeDir="false" afterPath="$PROJECT_DIR$/Makefiles/etape3_sdl_exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/Makefile_etape1_mock_CIRCLEWINS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/Makefile_etape1_mock_CROSSWINS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/Makefile_etape1_mock_DRAW" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/Makefile_etape2_scanf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/Makefile_etape3_sdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/etape1_mock_CIRCLEWINS_exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/etape1_mock_CROSSWINS_exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/etape1_mock_DRAW_exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/etape2_scanf_exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefiles/etape3_sdl_exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/board_view_text.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/board_view_text.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape1/player_manager_mock.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape1/player_manager_mock.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape2/player_manager_scanf.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape2/player_manager_scanf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape3/board_view_sdl.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/board_view_sdl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape3/images/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_O.png" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/images/sprite_O.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_X.png" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/images/sprite_X.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_circleWins.png" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/images/sprite_circleWins.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_crossWins.png" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/images/sprite_crossWins.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_draw.png" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/images/sprite_draw.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etape3/player_manager_sdl.c" beforeDir="false" afterPath="$PROJECT_DIR$/etape3/player_manager_sdl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/Doxyfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Doxyfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/board.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/board.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/board.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/board_view.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/board_view.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/board_view_text.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/bc_s.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/bc_s.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/bdwn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/bdwn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/board_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/board_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/board_8h__dep__incl.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/board_8h__dep__incl.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/board_8h__incl.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/board_8h__incl.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/board_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/board_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/board__view_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/board__view_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/board__view_8h__incl.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/board__view_8h__incl.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/board__view_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/board__view_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/closed.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/closed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/doc.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/doc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/doxygen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/doxygen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/doxygen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/doxygen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/dynsections.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/dynsections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/folderclosed.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/folderclosed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/folderopen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/folderopen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/game_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/game_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/game_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/game_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/globals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/globals_enum.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/globals_enum.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/globals_eval.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/globals_eval.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/globals_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/globals_type.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/globals_type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/graph_legend.dot" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/graph_legend.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/graph_legend.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/graph_legend.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/menudata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/nav_f.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/nav_f.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/nav_g.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/nav_g.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/nav_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/nav_h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/open.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/open.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/player__manager_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/player__manager_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/player__manager_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/player__manager_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/all_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enums_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enums_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enums_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enums_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enums_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enums_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enums_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enums_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enumvalues_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enumvalues_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enumvalues_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enumvalues_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enumvalues_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enumvalues_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enumvalues_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enumvalues_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enumvalues_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enumvalues_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enumvalues_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enumvalues_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enumvalues_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enumvalues_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enumvalues_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enumvalues_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enumvalues_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enumvalues_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/enumvalues_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/enumvalues_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/files_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/files_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/files_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/files_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/files_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/files_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/files_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/files_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/files_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/files_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/files_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/files_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/files_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/files_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/files_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/files_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/functions_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/functions_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/functions_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/functions_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/functions_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/functions_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/functions_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/functions_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/mag_sel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/mag_sel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/nomatches.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/nomatches.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/search_l.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/search_l.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/search_m.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/search_m.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/search_r.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/search_r.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/typedefs_0.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/typedefs_0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/typedefs_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/typedefs_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/typedefs_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/typedefs_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/typedefs_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/typedefs_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/typedefs_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/typedefs_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/search/typedefs_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/search/typedefs_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/splitbar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/splitbar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/sync_off.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/sync_off.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/sync_on.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/sync_on.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/tab_a.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/tab_a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/tab_b.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/tab_b.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/tab_h.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/tab_h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/tab_s.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/tab_s.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/tictactoe__errors_8h.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/tictactoe__errors_8h.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/doxygen/html/tictactoe__errors_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/doxygen/html/tictactoe__errors_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/game.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/main" beforeDir="false" afterPath="$PROJECT_DIR$/src/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/player_manager.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_manager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/player_manager_mock.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/tictactoe_errors.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe_errors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape1/tictactoe_erros.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/tictactoe_erros.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape2/player_manager_scanf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/board_view_sdl.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/board_view.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_O.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/sprite_circle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_X.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/sprite_cross.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_background.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/sprite_background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_cannotPutPiece.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/sprite_cannotPutPiece.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_circleTurn.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/sprite_circleTurn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_circleWins.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/sprite_circleWins.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_crossTurn.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/sprite_crossTurn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_crossWins.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/sprite_crossWins.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/images/sprite_draw.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/sprite_draw.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etape3/player_manager_sdl.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_manager.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support_projet_dirige_pplc.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_tictactoe/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/test_tictactoe/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +208,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="ReaderModeSettings">
+    <option name="showRenderedDocs" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/etape3/images" />
@@ -78,17 +218,17 @@
       <recent name="$PROJECT_DIR$/zzz" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/etape1" />
       <recent name="$PROJECT_DIR$/etape3/images" />
       <recent name="$PROJECT_DIR$/etape3" />
       <recent name="$PROJECT_DIR$/etape2" />
-      <recent name="$PROJECT_DIR$/etape1" />
-      <recent name="$PROJECT_DIR$/etape1/Doxygen" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -145,7 +285,10 @@
       <workItem from="1639912126156" duration="87000" />
       <workItem from="1639924390116" duration="4380000" />
       <workItem from="1639928789172" duration="343000" />
-      <workItem from="1639929873328" duration="6558000" />
+      <workItem from="1639929873328" duration="7911000" />
+      <workItem from="1639941589955" duration="901000" />
+      <workItem from="1639943567923" duration="78000" />
+      <workItem from="1640079939431" duration="5059000" />
     </task>
     <task id="LOCAL-00001" summary="Test commit via clion">
       <created>1636155319501</created>

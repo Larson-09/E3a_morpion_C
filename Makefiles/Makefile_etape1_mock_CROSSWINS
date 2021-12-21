@@ -1,9 +1,0 @@
-C_FILES :=$(wildcard ../etape1/*.c)
-H_FILES :=$(wildcard ../etape1/*.h)
-LDFLAGS:= -DCONFIG_PLAYER_MANAGER_MOCK=1 -DCONFIG_TEXTUI=1
-.SILENT:all
-
-all:
-	gcc $(C_FILES) $(H_FILES) $(LDFLAGS) -DMOCKFLAG_CROSS_WINS -o etape1_mock_CROSSWINS_exe
-	./etape1_mock_CROSSWINS_exe
-

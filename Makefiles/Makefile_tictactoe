@@ -1,0 +1,9 @@
+C_FILES :=$(wildcard ../src/*.c)
+H_FILES :=$(wildcard ../src/*.h)
+LDFLAGS:= -DCONFIG_PLAYER_MANAGER_SDL=1 -DCONFIG_SDLUI=1
+
+.SILENT: all
+
+all:
+	gcc -o tictactoe_exe $(C_FILES) $(H_FILES) $(LDFLAGS) -lSDL2_image `sdl2-config --cflags --libs`
+	./tictactoe_exe
