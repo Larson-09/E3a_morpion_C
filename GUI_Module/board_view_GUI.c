@@ -5,7 +5,7 @@
  * @author Hugo BURY and Jordan LAUDE
  */
 
-#include "board_view.h"
+#include "board_view_GUI.h"
 #include <assert.h>
 #include <stdio.h>
 #include <SDL.h>
